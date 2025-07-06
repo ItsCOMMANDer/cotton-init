@@ -34,6 +34,7 @@ debug:
 
 
 $(TARGET): $(OBJ_FILES)
+	$(SILENTCMD)mkdir -p build
 	$(SILENTMSG) $(LD) -o $@ $^ $(LDFLAGS) $(LIB) $(DEBUGFLAGS)
 	$(SILENTCMD)$(LD) -o $@ $^ $(LDFLAGS) $(LIB) $(DEBUGFLAGS)
 
