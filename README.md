@@ -7,3 +7,8 @@ I dont remember
 
 ## why cotton-init
 for fun
+
+## how to build
+Install the dependencies (make, gcc, lua; liblua will be a future dependency)
+
+Run `make -j`
