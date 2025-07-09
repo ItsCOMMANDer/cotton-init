@@ -11,4 +11,6 @@
 #define CONFIG_COMPILE_TIME __TIME__
 #define CONFIG_COMPILE_DATE __DATE__
 
+#define CONFIG_CONFIGURATION_FILE "/etc/cotton-init.cfg"
+
 #endif

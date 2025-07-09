@@ -12,3 +12,9 @@ for fun
 Install the dependencies (make, gcc, lua; liblua will be a future dependency)
 
 Run `make -j`
+
+## repo structure
+
+src/ - C source code files
+include/ - C headers
+docs/ - No docs (yet), just some planning stuff on the structure of the system atm
