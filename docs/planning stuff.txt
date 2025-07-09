@@ -1,0 +1,11 @@
+groups:
+
+boot -- stuff during initrd
+->modules.svc
+->fs.svc
+
+system -- rootfs stuff
+
+default -- everything else
+
+shutdown -- READ THE NAME

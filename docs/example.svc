@@ -1,0 +1,34 @@
+service = {
+	name = "example",
+	description = "An Example Service for cotton-init",
+	command = "/usr/bin/example -V -l",
+	envp  = {
+		PATH = "/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/bin:/usr/local/sbin",
+	},
+	pidfile = "/run/example.pid",
+	extraCommands = {
+		"flushCache",
+		"reloadConfig",
+	}
+}
+
+function depends()
+	init.after({
+		"init.fs",		-- after initilizing fs (mounting root, devfs, procfs, sysfs etc)
+		"init.network"	-- after initilizing network (dns, dhcp etc)
+	})
+
+	init.want("logger")
+
+	init.before("ui")
+
+	init.provides("time")
+end
+
+function flushCache()
+	do_something()
+end
+
+function reloadConfig()
+	do_something()
+end
