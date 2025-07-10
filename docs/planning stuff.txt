@@ -5,7 +5,25 @@ boot -- stuff during initrd
 ->fs.svc
 
 system -- rootfs stuff
+-> network
+  -> dns
+  -> dhcp
+  -> ?wifi
+-> gui
+  -> xorg
+  -> lightdm
+  -> kde plasma
 
 default -- everything else
 
 shutdown -- READ THE NAME
+
+
+
+how to do stuff:
+
+*boot
+*parse groups from initrd
+*parse services in each group
+*create dependency tree for each group
+*execute the services in each groups 

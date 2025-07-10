@@ -17,4 +17,4 @@ Run `make -j`
 
 src/ - C source code files
 include/ - C headers
-docs/ - No docs (yet), just some planning stuff on the structure of the system atm
+docs/ - No docs (yet), just some planning stuff on the structure of the system atm. Nothing more than mental notes for myself really
